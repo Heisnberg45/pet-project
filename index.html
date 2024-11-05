@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pet Care Organizer</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Registration Form -->
+        <div id="signup-form" class="form-container">
+            <img src="c:\Users\Lenovo\OneDrive\Desktop\Pet-care-Logo-1.png" alt="Pet Care Organizer Logo" class="logo">
+            <h2>Sign Up</h2>
+            <form id="signup">
+                <input type="text" placeholder="Full Name" required id="fullName">
+                <input type="text" placeholder="Username" required id="username">
+                <input type="email" placeholder="Email" required id="email">
+                <input type="password" placeholder="Password" required id="password">
+                <input type="password" placeholder="Confirm Password" required id="confirmPassword">
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login">Log in</a></p>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="form-container hidden">
+            <img src="c:\Users\Lenovo\OneDrive\Desktop\Blog-Image-1-655x374.png" alt="Pet Care Organizer Logo" class="logo">
+            <h2>Log In</h2>
+            <form id="login">
+                <input type="email" placeholder="Email" required id="loginEmail">
+                <input type="password" placeholder="Password" required id="loginPassword">
+                <button type="submit">Log In</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+        </div>
+
+        <!-- Main Dashboard Section -->
+        <div id="dashboard" class="section hidden">
+            <nav>
+                <ul>
+                    <li><a href="#health-tracking" class="nav-link">Health Tracking</a></li>
+                    <li><a href="#shopping" class="nav-link">Pet Shopping</a></li>
+                    <li><a href="#service-finder" class="nav-link">Service Finder</a></li>
+                    <li><a href="#adoption" class="nav-link">Pet Adoption</a></li>
+                </ul>
+            </nav>
+
+            <h2>Your Pets</h2>
+            <p>Manage your pets' health, diet, and more.</p>
+        </div>
+
+        <!-- Health Tracking Section -->
+        <div id="health-tracking" class="section hidden">
+            <h2>Health Tracking</h2>
+            <p>Track your veterinary appointments and vaccinations.</p>
+        </div>
+
+        <!-- Pet Shopping Section -->
+        <div id="shopping" class="section hidden">
+            <h2>Pet Shopping</h2>
+            <p>Buy food and other products for your pets.</p>
+        </div>
+
+        <!-- Service Finder Section -->
+        <div id="service-finder" class="section hidden">
+            <h2>Service Finder</h2>
+            <p>Find local pet sitters and dog walkers.</p>
+        </div>
+
+        <!-- Pet Adoption Section -->
+        <div id="adoption" class="section hidden">
+            <h2>Pet Adoption</h2>
+            <p>View pets available for adoption.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
